@@ -1,0 +1,9 @@
+{
+ "pas_http_subscription_subscribe": "Subscribe",
+ "pas_http_subscription_done_subscribe": "The subscription has been saved successfully.",
+
+ "pas_http_subscription_unsubscribe": "Unsubscribe",
+ "pas_http_subscription_done_unsubscribe": "The subscription has been canceled successfully.",
+
+ "errors_pas_http_subscription_not_subscripable": "Subscriptions are not available for the defined entry ID."
+}

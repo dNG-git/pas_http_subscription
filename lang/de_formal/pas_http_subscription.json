@@ -1,0 +1,9 @@
+{
+ "pas_http_subscription_subscribe": "Abonnieren",
+ "pas_http_subscription_done_subscribe": "Das Abonnement wurde erfolgreich gespeichert.",
+
+ "pas_http_subscription_unsubscribe": "Abbestellen",
+ "pas_http_subscription_done_unsubscribe": "Das Abonnement wurde erfolgreich beendet.",
+
+ "errors_pas_http_subscription_not_subscripable": "Abonnements stehen für die angegebene Eintrags-ID nicht zur Verfügung."
+}
