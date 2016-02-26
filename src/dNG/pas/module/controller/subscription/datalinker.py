@@ -87,7 +87,7 @@ Action for "subscribe"
 			              )
 		#
 
-		session = self.request.get_session()
+		session = (self.request.get_session() if (self.request.is_supported("session")) else None)
 		subscription_handler = self._get_subscription_handler(_id)
 
 		if (subscription_handler is None): NotificationStore.get_instance().add_error(L10n.get("errors_pas_http_subscription_not_subscribable"))
@@ -137,7 +137,7 @@ Action for "unsubscribe"
 			              )
 		#
 
-		session = self.request.get_session()
+		session = (self.request.get_session() if (self.request.is_supported("session")) else None)
 		subscription_handler = self._get_subscription_handler(_id)
 
 		if (subscription_handler is None): NotificationStore.get_instance().add_error(L10n.get("errors_pas_http_subscription_not_subscribable"))
@@ -172,7 +172,7 @@ Action for "subscribe"
 		try: datalinker_object = DataLinker.load_id(_id)
 		except NothingMatchedException: pass
 
-		session = self.request.get_session()
+		session = (self.request.get_session() if (self.request.is_supported("session")) else None)
 
 		if (datalinker_object is None): raise TranslatableError("pas_http_datalinker_oid_invalid", 404)
 		elif (isinstance(datalinker_object, OwnableInstance)
