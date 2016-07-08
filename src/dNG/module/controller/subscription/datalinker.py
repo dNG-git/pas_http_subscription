@@ -33,16 +33,17 @@ https://www.direct-netware.de/redirect?licenses;gpl
 
 import re
 
-from dNG.pas.controller.predefined_http_request import PredefinedHttpRequest
-from dNG.pas.data.data_linker import DataLinker
-from dNG.pas.data.ownable_mixin import OwnableMixin as OwnableInstance
-from dNG.pas.data.subscribable_mixin import SubscribableMixin as SubscribableInstance
-from dNG.pas.data.http.translatable_error import TranslatableError
-from dNG.pas.data.text.input_filter import InputFilter
-from dNG.pas.data.text.l10n import L10n
-from dNG.pas.data.xhtml.link import Link
-from dNG.pas.data.xhtml.notification_store import NotificationStore
-from dNG.pas.database.nothing_matched_exception import NothingMatchedException
+from dNG.controller.predefined_http_request import PredefinedHttpRequest
+from dNG.data.data_linker import DataLinker
+from dNG.data.http.translatable_error import TranslatableError
+from dNG.data.ownable_mixin import OwnableMixin as OwnableInstance
+from dNG.data.subscribable_mixin import SubscribableMixin as SubscribableInstance
+from dNG.data.text.input_filter import InputFilter
+from dNG.data.text.l10n import L10n
+from dNG.data.xhtml.link import Link
+from dNG.data.xhtml.notification_store import NotificationStore
+from dNG.database.nothing_matched_exception import NothingMatchedException
+
 from .module import Module
 
 class Datalinker(Module):
@@ -50,10 +51,10 @@ class Datalinker(Module):
 	"""
 Service for "m=subscription;s=datalinker"
 
-:author:     direct Netware Group
+:author:     direct Netware Group et al.
 :copyright:  (C) direct Netware Group - All rights reserved
 :package:    pas.http
-:subpackage: datalinker
+:subpackage: subscription
 :since:      v0.1.00
 :license:    https://www.direct-netware.de/redirect?licenses;gpl
              GNU General Public License 2
